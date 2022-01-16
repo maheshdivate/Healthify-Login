@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+ <link rel="stylesheet" href="login.css">
+</head>
+<style>
+
+body {
+	 background-image: url("https://www.optimecare.com/wp-content/uploads/2016/06/medical-background-green.png");
+}
+
+h1 {
+	background-color:Black;
+	color:green;
+	padding:10px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#main 
+{
+  border-style: solid;	
+  height:300px;
+  width:350px;
+  padding-left:2%;
+  padding-right:2%;
+  margin-left:36%;
+  background-color:#659DBD;
+}
+
+label {
+	font-weight: bold;
+	display: inline-block;
+	width: 100px;
+	
+}
+
+#user_lgn
+{
+	border-style: solid;	
+	text-align:center;
+	background-color:Green;
+	color:white;
+	padding:1%;
+}
+
+#submit
+{
+	background-color:Green;
+	margin-left:29%;
+	font-weight: bold;
+	padding:2%;
+	width:100px;
+	color:white;
+	
+}
+
+a {
+color:blue;
+}
+
+</style>
+
+
+<body>
+  <h1>Welcome To Healthify</h1>
+  
+ <div id="main">
+ 	<h2 id="user_lgn">User Login </h2>
+  	<form method="post" action="verify">
+   		<label>Email</label><input type="text" name="email" required><br><br>
+   		<label>Password</label><input type="text" name="pass" required><br><br>
+   		<input type="submit" value="submit" id="submit"><br><br>
+   		<a href="DocterRegistration.html">Are u a Docter? Register here.</a><br><br>
+   		<a href="Register.html">Not Registered?<span>please Register!!</span></a>
+  
+  	</form>
+</div> 
+</body>
+</html>

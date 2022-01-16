@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Docter Registration</title>
+
+<style>
+
+
+h1 {
+	background-color:Black;
+	color:green;
+	padding:10px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#main 
+{
+ border-style:solid;
+ width:350px;
+ padding-left:2%;
+ padding-right:2%;
+ padding-bottom:2%;
+ padding-top:1%;
+ margin-left:35%;
+ postion:relatiove;
+}
+
+#btn-submit
+{
+ margin-left:38%;
+ background-color:green;
+ font-weight: bold;
+ font-size: 18px;
+ color:white;
+ padding:5px;
+}
+
+h2 {
+text-align:center;
+}
+label {
+text-align: left;
+display: inline-block;
+width: 150px;
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<body>
+	<h1>Welcome To Healthify</h1>
+	
+<div id="main">
+   <h2>Docter Registration</h2>
+   
+
+	<form action="docServlet" method="post">
+	<label>Id</label><input type="number" name="uId"><br><br>
+	<label>Name</label><input type="text" name="name"><br><br>
+	<label>Email</label><input type="email" name="email"><br><br>
+	<label>PassWord</label><input type="text" name="pass" id="pass"><br><br>
+	<label>Conform Password</label><input type="text" name="cpass" id="cpass"><br><br> 
+	<label>Mobile No</label><input type="text" name="mob"><br><br>
+	<label>Qualification</label><input type="text" name="qual"><br><br>
+	<label>Specialisation</label><input type="text" name="spec"><br><br>
+	<label>City</label><input type="text" name="city"><br><br>
+	<label>PinCode</label><input type="number" name="pin"><br><br>
+	<button type="submit" id="btn-submit">Submit</button>
+	</form>
+</div>
+
+
+</body>
+</html>

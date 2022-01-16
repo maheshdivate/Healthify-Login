@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+<style>
+
+
+h1 {
+	background-color:Black;
+	color:green;
+	padding:10px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#main 
+{
+ border-style:solid;
+ width:430px;
+ padding-left:2%;
+ padding-right:2%;
+ padding-bottom:2%;
+ padding-top:1%;
+ margin-left:35%;
+ postion:relatiove;
+}
+
+#btn-submit
+{
+ margin-left:38%;
+ background-color:green;
+ font-weight: bold;
+ font-size: 18px;
+ color:white;
+ padding:5px;
+}
+
+h2 {
+text-align:center;
+}
+label {
+text-align: left;
+display: inline-block;
+width: 150px;
+}
+
+</style>
+
+</head>
+<body>
+	<h1>Welcome To Healthify</h1>
+	
+<div id="main">
+   <h2>User Registration</h2>
+   
+
+	<form action="userServlet" method="post">
+	<label>Id</label><input type="number" name="uId" required><br><br>
+	<label>Name</label><input type="text" name="name" required><br><br>
+	<label>Email</label><input type="email" name="email" required><br><br>
+	<label>PassWord</label><input type="text" name="pass" id="pass" required onkeyup="check()"><br><br>
+	<label>Conform Password</label><input type="text" name="cpass" id="cpass" required onkeyup="check()"><span id='message'></span><br><br> 
+	<label>Mobile No</label><input type="text" name="mob" required><br><br>
+	<label>City</label><input type="text" name="city" required><br><br>
+	<label>PinCode</label><input type="number" name="pin" required><br><br>
+	<button type="submit" id="btn-submit">Submit</button>
+	</form>
+</div>
+
+<script>
+var check = function() {
+	  if (document.getElementById('pass').value ==
+	    document.getElementById('cpass').value) {
+	    document.getElementById('message').style.color = 'green';
+	    document.getElementById('message').innerHTML = 'matching';
+	  } else {
+	    document.getElementById('message').style.color = 'red';
+	    document.getElementById('message').innerHTML = 'not matching';
+	  }
+	}
+  
+</script>
+
+</body>
+</html>
+
+//ctrl+shift+alt+T
